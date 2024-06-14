@@ -1,0 +1,468 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+    font-family: "Barlow Condensed", sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+
+.header {
+
+    display: flex;
+    align-items: center;
+    min-height: 80vh;
+
+}
+
+.swiper-slide {
+
+    padding: 0 80px 50px 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-button-prev::after {
+    font-size: 25px;
+
+}
+
+.swiper-button-prev::after {
+    font-size: 25px;
+
+}
+
+.swiper-button-prev {
+    color: rgb(55, 230, 55);
+
+}
+
+.swiper-button-next {
+    color: rgb(0, 255, 34);
+
+}
+
+.swiper-pagination-bullet {
+
+    background-color: rgb(0, 0, 0);
+
+}
+
+.swiper-pagination-bullet-active {
+
+    background-color: rgb(16, 167, 66);
+
+}
+
+.menu {
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+.logo {
+
+    font-size: 25px;
+    color: rgb(42, 255, 14);
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.menu .navbar ul li {
+
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a {
+    font-size: 18px;
+    padding: 20px;
+    color: rgb(16, 139, 255);
+    display: block;
+}
+
+.menu .navbar ul li a:hover {
+
+    color: rgb(7, 255, 28);
+
+}
+
+#menu {
+    display: none;
+}
+
+.menu-icono {
+    width: 25px;
+
+}
+
+.menu label {
+    cursor: pointer;
+    display: none;
+
+}
+
+.submenu {
+    position: relative;
+
+}
+
+.submenu #carrito {
+    display: none;
+}
+
+.submenu:hover #carrito {
+
+    display: block;
+    position: absolute;
+    right: 0;
+    backdrop-filter: blur(10px);
+    top: 100%;
+    z-index: 1;
+    background-color: rgb(149, 219, 149);
+    padding: 20px;
+    min-width: 400px;
+}
+
+table {
+    width: 100%;
+}
+
+th td {
+    color: aliceblue;
+}
+
+.borrar {
+    background-color: red;
+    border-radius: 50%;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: rgb(0, 17, 255);
+    font-weight: 800;
+}
+
+.heder-content {
+    padding: 200px 0 100px 0;
+}
+
+.header-info {
+    display: flex;
+
+}
+
+.header-txt {
+    width: 50%;
+
+}
+
+.header-txt h1 {
+    font-size: 50px;
+    color: rgb(0, 0, 0);
+    text-transform: capitalize;
+}
+
+.header-img {
+    width: 50%;
+    text-align: right;
+
+}
+
+.header-img img {
+    width: 500px;
+}
+
+.precio {
+    display: flex;
+    margin: 20px 0;
+
+}
+
+.precio-1 {
+    font-size: 30px;
+    color: black;
+    text-decoration-line: none;
+    margin-right: 25px;
+}
+
+.btn-1 {
+    display: inline-block;
+    background-color: black;
+    color: rgb(34, 250, 45);
+    font-size: 16px;
+    padding: 10px 25px;
+    border-radius: 25px;
+    margin-top: 40px;
+}
+
+.btn-1:hover {
+    background-color: black;
+}
+
+hr {
+    border: 1px solid chartreuse;
+}
+
+.categorias {
+    text-align: left;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.categoria {
+    display: flex;
+    align-items: center;
+    padding: 35px;
+}
+
+.categoria img {
+    width: 150px;
+}
+
+.categoria-1 {
+    width: 50%;
+}
+
+.categoria-1 h3 {
+    color: chartreuse;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.categorie-1 p {
+    color: black;
+    font-size: 18px;
+}
+
+.categorie img {
+    width: 50%;
+}
+
+.productos img {
+    width: 50px;
+}
+
+.productos {
+    padding: 50px 0;
+}
+
+.productos h2 {
+    font-size: 50px;
+    color: rgb(71, 235, 71);
+    margin-bottom: 70px;
+}
+
+.productos {
+
+    text-align: center;
+
+}
+
+.productos img {
+    width: 150px;
+    margin-bottom: 15px;
+}
+
+.productos-txt h2 {
+    font-size: 18px;
+    color: black;
+    margin-bottom: 15px;
+}
+
+.productos-txt p {
+    color: black;
+    font-size: 16px;
+    margin-bottom: 15px;
+
+}
+
+.precio {
+    color: chartreuse !important;
+}
+
+.btn-3 {
+    display: inline-block;
+    padding: 10px 25px;
+    font-size: 14px;
+    color: rgb(0, 255, 98);
+    border: 1px solid rgb(28, 255, 66);
+    border-radius: 25px;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.btn-3:hover {
+    background-color: rgb(91, 92, 89);
+}
+
+.footer {
+    display: flex;
+    padding: 30px 0;
+}
+
+.link {
+    width: 20%;
+}
+
+.link h3 {
+    color: chartreuse;
+    margin-bottom: 20px;
+}
+
+.link a {
+    color: rgb(41, 134, 12);
+    font-size: 16px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.link p {
+    color: black;
+    font-size: 16px;
+}
+
+@media(max-width:991px) {
+
+    .menu {
+        padding: 20px;
+    }
+
+    .memu label {
+        display: initial;
+    }
+
+    .menu .navbar {
+
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #4ff02e;
+        display: none;
+    }
+
+    .menu .navbar ul li {
+        width: 100%;
+    }
+
+    #menu:checked ~.navbar {
+        display: initial;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .submenu:hover #carrito {
+        min-width: 100%;
+    }
+
+    .myswiper-1 {
+        width: 300px;
+    }
+
+    .swiper-slide {
+
+        padding: 0 30px 50px 30px;
+
+    }
+
+    .heder-content {
+
+        padding: 100px 0 50px 0;
+
+    }
+
+    .header-info {
+
+        padding: 0;
+
+        flex-direction: column;
+
+        text-align: center;
+
+    }
+
+    .header-txt {
+
+        width: 100%;
+
+    }
+
+    .header-txt h1 {
+
+        font-size: 40px;
+
+    }
+
+    .header-img {
+
+        width: 100%;
+
+    }
+
+    .header-img img {
+        width: 200px;
+
+    }
+
+
+
+    .precios {
+        flex-direction: column;
+    }
+    
+    .precio-1 {
+        margin: 0;
+    }
+
+    .btn-1{
+        margin: 20px 0;
+    }
+
+    .products {
+        padding: 30px;
+    
+    }
+    
+    .products h2 {
+    
+    font-size: 40px;
+    
+    margin-bottom: 40px;
+    
+    }
+    
+    .footer {
+    
+    flex-direction: column;
+    
+    align-items: center;
+    
+    text-align: center;
+    
+    }
+    
+    .link {width: 100%;}
+    
+
+}
+
